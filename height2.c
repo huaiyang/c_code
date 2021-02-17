@@ -30,11 +30,11 @@ int main()
 {
 	printf("请输入身高英寸,如5尺7寸，输入5 7: ");
 	
-	int foot;
-	int inch;
+	double foot;
+	double inch;
 	
 	
-	scanf("%d %d", &foot, &inch);            
+	scanf("%lf %lf", &foot, &inch);            
 	printf("身高是%f米. \n",
 			((foot + inch / 12.0) * 0.3048));
 	
