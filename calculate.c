@@ -26,7 +26,7 @@
 
 int main()
 {
-	printf("23x40=%d\n", 23*40);
+	printf("23x50=%d\n", 23*50);
 	
 	return 0;
 	}
