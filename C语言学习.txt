@@ -1,0 +1,95 @@
+					C语言学习笔记
+									讲师：李慧芹
+
+
+C语言发展史：
+		1960	原型A语言 -> ALGOL语言
+		1963	CPL语言
+		1967	BCPL
+		1970 	B语言 -> 第一个Linux 版本 -> B语言+汇编
+		1973 	C语言 -> 重编Linux版本
+
+C语言特点：
+		1，基础性语言
+	    2，语法简洁，紧凑，方便，灵活
+		3，运算符，数据结构丰富
+		4，结构化，模块化编程
+		5，移植性好，执行效率高
+		6，允许直接对硬件操作，贴着硬件进行编程，如FPGA， DSP等
+
+C语言学习建议：
+		1，概念的正确性
+		2，动手能力
+		3，阅读优秀的程序段，自己写+读优秀的程序段
+		4，大量练习，面试题
+
+C语言讲解思路：
+		1，基本概念
+		2，数据类型，运算符和表达式
+		3，输入输出专题
+		4，流程控制（顺序，选择，循环）
+		5，数组
+		6，指针
+		7，函数
+		8，构造类型
+		9，动态内存管理
+		10，调试工具和调试技巧（gdb,make）
+		11，常用的库函数
+
+平台介绍： 64位的redhat6,vim,gcc(make)
+
+
+Hello world
+
+#include <stdio.h>
+#include <stdlib.h>
+printf("Hellow World!/n") // "/n" 表示换行, 另外一个作用是刷新缓冲区
+
+hello.c:
+C源文件-预处理-编译-汇编-链接-可执行文件
+bill@Bill:~/data/c_code$ gcc -E hello.c > hello.i
+bill@Bill:~/data/c_code$ gcc -S hello.i
+bill@Bill:~/data/c_code$ ls
+hello  hello.c  hello.i  hello.o  hello.s
+bill@Bill:~/data/c_code$ rm -rf *
+bill@Bill:~/data/c_code$ ls
+hello.c
+bill@Bill:~/data/c_code$ gcc -E hello.c > hello.i
+bill@Bill:~/data/c_code$ ls
+hello.c  hello.i
+bill@Bill:~/data/c_code$ gcc -S hello.i
+bill@Bill:~/data/c_code$ ls
+hello.c  hello.i  hello.s
+bill@Bill:~/data/c_code$ gcc -c hello.s
+bill@Bill:~/data/c_code$ ls
+hello.c  hello.i  hello.o  hello.s
+
+				一，基本概念
+1， 以helloworld为例对写程序的思路提出如下要求：
+	1） 头文件正确包含的重要性
+	2） 以函数为单位进行程序编写(只要是能独立出来的功能，就独立成小函数。)
+	3)  声明部分+实现部分
+		全局的声明部分，函数的声明部分。
+	4)  return 0; ->结束当前函数,给他的父进程看的
+		exit 0; ->结束当前进程
+	5) 多用空格空行
+	6) 添加注释
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
