@@ -63,6 +63,7 @@ hello.c  hello.i  hello.s
 bill@Bill:~/data/c_code$ gcc -c hello.s
 bill@Bill:~/data/c_code$ ls
 hello.c  hello.i  hello.o  hello.s
+bill@LAPTOP-PT0OMORD:~/data/c_code/c_code$ gcc hello.o -o hello
 
 				一，基本概念
 1， 以helloworld为例对写程序的思路提出如下要求：
